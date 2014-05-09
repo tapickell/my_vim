@@ -100,9 +100,11 @@ set visualbell
 
 " Start without the toolbar
 set guioptions-=T
+set go-=r
+set go-=L
 
 " Default gui color scheme
-color vividchalk
+color blackdust
 
 " ConqueTerm wrapper
 function StartTerm()

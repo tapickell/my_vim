@@ -8,12 +8,12 @@ vnoremap <BS> d
 
 " Control+A is Select All.
 "
-noremap  <C-A>  gggH<C-O>G
-inoremap <C-A>  <C-O>gg<C-O>gH<C-O>G
-cnoremap <C-A>  <C-C>gggH<C-O>G
-onoremap <C-A>  <C-C>gggH<C-O>G
-snoremap <C-A>  <C-C>gggH<C-O>G
-xnoremap <C-A>  <C-C>ggVG
+"noremap  <C-A>  gggH<C-O>G
+"inoremap <C-A>  <C-O>gg<C-O>gH<C-O>G
+"cnoremap <C-A>  <C-C>gggH<C-O>G
+"onoremap <C-A>  <C-C>gggH<C-O>G
+"snoremap <C-A>  <C-C>gggH<C-O>G
+"xnoremap <C-A>  <C-C>ggVG
 
 " Control+S saves the current file (if it's been changed).
 "
@@ -46,7 +46,7 @@ nnoremap <S-F7>  vipJ
 inoremap <S-F7>  <Esc>vipJi
 vnoremap <S-F7>  J
 
-" Tab/Shift+Tab indent/unindent the highlighted block (and maintain the
+" > /  <   indent/unindent the highlighted block (and maintain the
 " highlight after changing the indentation). Works for both Visual and Select
 " modes.
 "
@@ -96,11 +96,6 @@ nnoremap Q  gwap
 xnoremap Q  gw
 vnoremap Q  gw
 
-" Make page-forward and page-backward work in insert mode.
-"
-inoremap <C-F>  <C-O><C-F>
-inoremap <C-B>  <C-O><C-B>
-
 " Turn On/Off NERDTree
 map <leader>n :NERDTreeToggle<CR>
 
@@ -122,6 +117,12 @@ nmap <silent> <Up> gk
 nmap <F5> :GundoToggle<CR>
 imap <F5> <ESC>:GundoToggle<CR>
 
+<<<<<<< Updated upstream
+=======
+" ZoomWin configuration
+"map <Leader><Leader> :ZoomWin<CR>
+
+>>>>>>> Stashed changes
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 map <C-\> :tnext<CR>

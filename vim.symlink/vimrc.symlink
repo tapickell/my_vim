@@ -2,24 +2,34 @@ aug AutoloadVimrc
   au!
   au BufWritePost ~/dotfiles/vim.symlink/vimrc.symlink source $MYVIMRC
   au BufWritePost ~/dotfiles/vim.symlink/*.vim source $MYVIMRC
+  au BufRead,BufNewFile *.go set filetype=go
 aug END
 
 set nocompatible               " be iMproved
 filetype off                   " required!
 set shell=$SHELL
 
+
+if &term =~ '256color'
+    " disable Background Color Erase (BCE) so that color schemes
+    "   " render properly when inside 256-color tmux and GNU screen.
+    "     " see also http://snk.tuxfamily.org/log/vim-256color-bce.html
+    "       set t_ut=
+    "       endif"
+endif
+
 source $HOME/.vim/bundle.vim
 
 let mapleader = ','
 syntax enable
 
-colorscheme vividchalk
+colorscheme coffee
 set t_Co=256
 " Set console highlights to be readable with black background
-set bg=dark
+" set bg=dark
 
 " Make GUI colors light on dark
-hi Normal guibg=black guifg=white
+" hi Normal guibg=black guifg=white
 
 set autoindent          " Copy indent from current line for new line
 set nosmartindent       " 'smartindent' breaks right-shifting of # lines
@@ -82,7 +92,8 @@ set list
 
 " Update the swap file every 20 characters. I don't like to lose stuff.
 "
-set updatecount=20
+"set updatecount=20
+set noswapfile
 
 " Command-T configuration
 let g:CommandTMaxHeight=20

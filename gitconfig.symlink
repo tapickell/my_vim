@@ -1,5 +1,5 @@
 [git-pair]
-    authors = Amos King <amos.king@asolutions.com>
+    authors = Todd Pickell <myappleguy@gmail.com>
 
 [color]
     ui = auto
@@ -62,7 +62,16 @@
 [include]
     path = .my_gitconfig
 [user]
-	name = Amos L King
-	email = amos.l.king@gmail.com
+	name = Todd Pickell
+	email = myappleguy@gmail.com
 [core]
 	editor = /usr/bin/vim
+	excludesfile = /Users/toddpickell/.gitignore_global
+[push]
+	default = simple
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
