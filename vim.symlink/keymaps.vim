@@ -122,9 +122,6 @@ nmap <silent> <Up> gk
 nmap <F5> :GundoToggle<CR>
 imap <F5> <ESC>:GundoToggle<CR>
 
-" ZoomWin configuration
-map <Leader><Leader> :ZoomWin<CR>
-
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 map <C-\> :tnext<CR>
@@ -185,9 +182,9 @@ nmap <leader>gr :Gread<CR>:w<CR>
 nmap <leader>gp :Git push origin HEAD<CR>
 
 " Ruby helpers
-nmap <leader>rs :w<CR>:! rspec %<CR>
-nmap <leader>r :w<CR>:! ruby %<CR>
-nmap <leader><leader>r :w<CR>:! ruby -Itest %<CR>
+nmap <leader>rs :w<CR>:! echo "Preparing" && rspec %<CR>
+nmap <leader>r :w<CR>:! echo "Preparing" && bundle exec ruby %<CR>
+nmap <leader><leader>r :w<CR>:! echo "Preparing" && ruby -Itest %<CR>
 
 " spell check
 nmap <leader>sc :setlocal spell! spelllang=en_us<CR>
@@ -200,3 +197,6 @@ inoremap <leader>s <ESC>:w<CR>
 nmap <leader><leader>c :vsp<CR>:e ~/dotfiles/vim.symlink/vimrc.symlink<CR>
 nmap <leader>ab :vsp<CR>:e ~/dotfiles/vim.symlink/abbreviations.vim<CR>
 nmap <leader>km :vsp<CR>:e ~/dotfiles/vim.symlink/keymaps.vim<CR>
+nmap <leader>ts :vsp<CR>:e ~/toolsharp.txt<CR>
+imap <leader>g :!gist %<CR>
+nmap <leader>pg :!gist --private %<CR>
