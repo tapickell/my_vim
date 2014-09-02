@@ -47,7 +47,10 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'vim-indent-object'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'flazz/vim-colorschemes'
-
+Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-projectionist'
+Bundle 'dsawardekar/ember.vim'
+Bundle 'adamzaninovich/vim-spec_runner'
 
 filetype plugin indent on     " required!

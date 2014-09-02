@@ -2,6 +2,10 @@
 " Key Mappings
 "
 
+" Space in Normal mode
+"
+nnoremap <Space> i<Space><Esc>
+
 " Backspace in Visual mode deletes selection.
 "
 vnoremap <BS> d
@@ -117,12 +121,9 @@ nmap <silent> <Up> gk
 nmap <F5> :GundoToggle<CR>
 imap <F5> <ESC>:GundoToggle<CR>
 
-<<<<<<< Updated upstream
-=======
 " ZoomWin configuration
 "map <Leader><Leader> :ZoomWin<CR>
 
->>>>>>> Stashed changes
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
 map <C-\> :tnext<CR>
