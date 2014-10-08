@@ -52,5 +52,6 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-projectionist'
 Bundle 'dsawardekar/ember.vim'
 Bundle 'adamzaninovich/vim-spec_runner'
+Bundle 'terryma/vim-multiple-cursors'
 
 filetype plugin indent on     " required!

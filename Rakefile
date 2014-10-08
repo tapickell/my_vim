@@ -1,4 +1,3 @@
-# Mostly from https://github.com/holman/dotfiles
 require 'rake'
 
 task :default => [:install]
@@ -61,10 +60,10 @@ task :uninstall do
     if File.symlink?(target)
       FileUtils.rm(target)
     end
-    
+
     # Replace any backups made during installation
     if File.exists?("#{ENV["HOME"]}/.#{file}.backup")
-      `mv "$HOME/.#{file}.backup" "$HOME/.#{file}"` 
+      `mv "$HOME/.#{file}.backup" "$HOME/.#{file}"`
     end
   end
 end
