@@ -48,6 +48,8 @@ Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tpope/vim-projectionist'
 Bundle 'dsawardekar/ember.vim'
+Bundle 'terryma/vim-multiple-cursors'
 Bundle 'adamzaninovich/vim-spec_runner'
+Bundle 'jeffkreeftmeijer/vim-numbertoggle'
 
 filetype plugin indent on     " required!

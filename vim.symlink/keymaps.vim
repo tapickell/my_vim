@@ -196,9 +196,11 @@ nmap <leader>s :w<CR>
 inoremap <leader>s <ESC>:w<CR>
 
 " edit vim configs
-nmap <leader><leader>c :vsp<CR>:e ~/dotfiles/vim.symlink/vimrc.symlink<CR>
-nmap <leader>ab :vsp<CR>:e ~/dotfiles/vim.symlink/abbreviations.vim<CR>
-nmap <leader>km :vsp<CR>:e ~/dotfiles/vim.symlink/keymaps.vim<CR>
+nmap <leader><leader>c :vsp<CR>:e ~/my_vim/vim.symlink/vimrc.symlink<CR>
+nmap <leader>ab :vsp<CR>:e ~/my_vim/vim.symlink/abbreviations.vim<CR>
+nmap <leader>km :vsp<CR>:e ~/my_vim/vim.symlink/keymaps.vim<CR>
+nmap <leader>bd :vsp<CR>:e ~/my_vim/vim.symlink/bundle.vim<CR>
+nmap <leader>ft :vsp<CR>:e ~/my_vim/vim.symlink/filety/filetypes.vim<CR>
 nmap <leader>ts :vsp<CR>:e ~/toolsharp.txt<CR>
 imap <leader>g :!gist %<CR>
 nmap <leader>pg :!gist --private %<CR>

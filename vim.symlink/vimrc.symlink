@@ -7,8 +7,8 @@ aug END
 
 set nocompatible               " be iMproved
 filetype off                   " required!
-set shell=$SHELL
 
+set shell=/usr/local/bin/zsh
 
 if &term =~ '256color'
     " disable Background Color Erase (BCE) so that color schemes
@@ -96,7 +96,10 @@ set list
 set noswapfile
 
 " Command-T configuration
-let g:CommandTMaxHeight=20
+"let g:CommandTMaxHeight=20
+
+let g:mustache_abbreviations = 1
+
 
 " Enable syntastic syntax checking
 let g:syntastic_enable_signs=1

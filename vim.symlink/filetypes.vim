@@ -18,9 +18,10 @@ au BufNewFile,BufRead *.eco set filetype=eco
 au BufNewFile,BufRead *.rabl set filetype=ruby
 au BufNewFile,BufRead *.coffee set filetype=coffee
 au BufNewFile,BufRead *.ru set filetype=ruby
+au BufNewFile,BufRead *.hbs set filetype=handlebars
 
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
-au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set ft=ruby
+au BufRead,BufNewFile {Guardfile,Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set ft=ruby
 
 " md, markdown, and mk are markdown and define buffer-local preview
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()

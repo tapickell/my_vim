@@ -24,7 +24,7 @@
     cp = cherry-pick
     di = diff
     diff-stat = diff -b --stat
-    graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=short
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
     history = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
     ignore = !([ ! -e .gitignore ] && touch .gitignore) | echo $1 >>.gitignore
@@ -63,7 +63,7 @@
     path = .my_gitconfig
 [user]
 	name = Todd Pickell
-	email = myappleguy@gmail.com
+	email = tapickell@gmail.com
 [core]
 	editor = /usr/bin/vim
 	excludesfile = /Users/toddpickell/.gitignore_global
@@ -71,7 +71,7 @@
 	default = simple
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
