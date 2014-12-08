@@ -1,7 +1,7 @@
 aug AutoloadVimrc
   au!
-  au BufWritePost ~/dotfiles/vim.symlink/vimrc.symlink source $MYVIMRC
-  au BufWritePost ~/dotfiles/vim.symlink/*.vim source $MYVIMRC
+  au BufWritePost ~/my_vim/vim.symlink/vimrc.symlink source $MYVIMRC
+  au BufWritePost ~/my_vim/vim.symlink/*.vim source $MYVIMRC
   au BufRead,BufNewFile *.go set filetype=go
 aug END
 
@@ -28,7 +28,6 @@ set t_Co=256
 " Set console highlights to be readable with black background
 " set bg=dark
 
-" Make GUI colors light on dark
 " hi Normal guibg=black guifg=white
 
 set autoindent          " Copy indent from current line for new line

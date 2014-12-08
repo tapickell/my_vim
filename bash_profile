@@ -3,8 +3,8 @@
 export PATH=/usr/local/bin:$PATH
 export EDITOR=vim
 
-source ~/dotfiles/git_completion.bash
-source ~/dotfiles/git_prompt
-source ~/dotfiles/aliases.bash
+source ~/my_vim/git_completion.bash
+source ~/my_vim/git_prompt
+source ~/my_vim/aliases.bash
 
 set -o vi

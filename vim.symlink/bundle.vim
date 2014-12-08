@@ -51,5 +51,6 @@ Bundle 'dsawardekar/ember.vim'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'adamzaninovich/vim-spec_runner'
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
+Bundle 'terryma/vim-multiple-cursors'
 
 filetype plugin indent on     " required!
